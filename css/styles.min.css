@@ -185,7 +185,7 @@
 .offcanvas-menu {
     position: relative;
     width: 100%;
-    overflow: hidden
+    overflow: visible;
 }
 
 .offcanvas-menu ul {
@@ -234,7 +234,7 @@
 
 .offcanvas-menu ul li.back-btn>a {
     background-color: #313b47;
-    color: #fff
+    color: rgb(214, 27, 27)
 }
 
 .offcanvas-menu ul li.back-btn>a::before {
@@ -277,7 +277,7 @@
     height: calc(100% - 1px);
     transition: background-color .3s;
     border-left: 1px solid rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
     z-index: 1
 }
@@ -381,10 +381,10 @@ html * {
 
 body {
     background-position: center;
-    background-color: #fff;
+    background-color: rgb(167, 11, 11);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #606975;
+    color: #f3f6fa;
     font-family: "Maven Pro", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -5351,7 +5351,7 @@ video {
         left: -48px
     }
     .offcanvas-open .sidebar-toggle {
-        display: none
+        display: none;
     }
 }
 
@@ -6590,7 +6590,7 @@ video {
 }
 
 .offcanvas-toggle.menu-toggle {
-    display: none
+    display: none;
 }
 
 .site-menu {
