@@ -3,12 +3,12 @@ button-w {
 }
 
 body {
-    background-image: url(https://images.pexels.com/photos/3951373/pexels-photo-3951373.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1250);
+    background-image: url(https://images.pexels.com/photos/7675373/pexels-photo-7675373.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1250);
 }
 
 .contact_bt {
     width: 180px;
-    height: 50px;
+    height: 20px;
     background: black;
     color: #fff;
     float: left;
@@ -58,7 +58,7 @@ body {
 
 .dit-right h4 {
     font-size: 16px;
-    color: #3a4149;
+    color: #eeeff0;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -67,11 +67,12 @@ body {
 .dit-right p {
     font-size: 14px;
     margin-top: 0;
+    color: #edeff1;
 }
 
 .dit-right a {
     font-size: 14px;
-    color: #3a4149;
+    color: #f3f0f0;
     font-weight: 300;
     line-height: normal;
 }
@@ -138,6 +139,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .site-footer {
-    margin-top: 450px;
-    height: 600px;
+    margin-top: 150px;
+    height: auto;
+    padding-bottom: -320px;
 }
