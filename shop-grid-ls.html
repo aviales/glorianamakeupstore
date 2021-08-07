@@ -6,339 +6,105 @@
     <meta charset="utf-8">
     <title>Gloriana Makeup Store
     </title>
-    <!-- Mobile Specific Meta Tag-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" media="screen" href="css/vendor.min.css">
     <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <!-- Modernizr-->
     <script src="js/modernizr.min.js"></script>
-
-    <!--      ADD GOOGLE ANALYTICS HERE            -->
-
-
 </head>
 <!-- Body-->
 
 <body>
-    <!-- Off-Canvas Category Menu-->
-    <div class="offcanvas-container" id="shop-categories">
-        <div class="offcanvas-header">
-            <h3 class="offcanvas-title">Shop Categories</h3>
-        </div>
-        <nav class="offcanvas-menu">
-            <ul class="menu">
-                <li class="has-children"><span><a href="#">Men's Shoes</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Sneakers</a></li>
-                        <li><a href="#">Loafers</a></li>
-                        <li><a href="#">Boat Shoes</a></li>
-                        <li><a href="#">Sandals</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+
+            <!-- close sidebar menu -->
+            <div class="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="logo">
+                <h3><a href="index.html">Bootstrap 4 Template with Sidebar Menu</a></h3>
+                <img class="d-inline-block w-15 mb-4" src="img\logo\GLORIANA.JPG" alt="">
+            </div>
+
+            <ul class="list-unstyled menu-elements">
+                <li class="active">
+                    <a class="scroll-link" href="index.html"><i class="fas fa-home"></i> Home</a>
                 </li>
-                <li class="has-children"><span><a href="#">Women's Shoes</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Sandals</a></li>
-                        <li><a href="#">Flats</a></li>
-                        <li><a href="#">Sneakers</a></li>
-                        <li><a href="#">Heels</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
+                <li>
+                    <a class="scroll-link" href="#section-1"><i class="fas fa-cog"></i> What we do</a>
                 </li>
-                <li class="has-children"><span><a href="#">Men's Clothing</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Shirts &amp; Tops</a></li>
-                        <li><a href="#">Pants</a></li>
-                        <li><a href="#">Jackets</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
+                <li>
+                    <a class="scroll-link" href="#section-2"><i class="fas fa-user"></i> About us</a>
                 </li>
-                <li class="has-children"><span><a href="#">Women's Clothing</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Dresses</a></li>
-                        <li><a href="#">Shirts &amp; Tops</a></li>
-                        <li><a href="#">Shorts</a></li>
-                        <li><a href="#">Swimwear</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
+                <li>
+                    <a class="scroll-link" href="#section-5"><i class="fas fa-pencil-alt"></i> Portfolio</a>
                 </li>
-                <li class="has-children"><span><a href="#">Kid's Shoes</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Boots</a></li>
-                        <li><a href="#">Sandals</a></li>
-                        <li><a href="#">Crib Shoes</a></li>
-                        <li><a href="#">Loafers</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
+                <li>
+                    <a class="scroll-link" href="#section-6"><i class="fas fa-envelope"></i> Contact us</a>
                 </li>
-                <li class="has-children"><span><a href="#">Bags</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Handbags</a></li>
-                        <li><a href="#">Backpacks</a></li>
-                        <li><a href="#">Luggage</a></li>
-                        <li><a href="#">Wallets</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
-                </li>
-                <li class="has-children"><span><a href="#">Accessories</a><span class="sub-menu-toggle"></span></span>
-                    <ul class="offcanvas-submenu">
-                        <li><a href="#">Sunglasses</a></li>
-                        <li><a href="#">Hats</a></li>
-                        <li><a href="#">Watches</a></li>
-                        <li><a href="#">Jewelry</a></li>
-                        <li><a href="#">Belts</a></li>
-                        <li><a href="#">View All</a></li>
+                <li>
+                    <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                        <i class="fas fa-sync"></i>Makeup Brands
+                    </a>
+                    <ul class="collapse list-unstyled" id="otherSections">
+                        <li>
+                            <a class="scroll-link" href="#section-3">Loreal</a>
+                        </li>
+                        <li>
+                            <a class="scroll-link" href="#section-4">Clinic</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
+
+            <div class="to-top">
+                <a class="btn btn-primary btn-customized-3" href="#" role="button">
+                    <i class="fas fa-arrow-up"></i> Top
+                </a>
+            </div>
+
+            <div class="dark-light-buttons">
+                <a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+                <a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+            </div>
+
         </nav>
+        <!-- End sidebar -->
+
+        <!-- Dark overlay -->
+        <div class="overlay"></div>
+
+        <!-- Content -->
+        <div class="content">
+
+            <!-- open sidebar menu -->
+            <a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+                <i class="fas fa-align-left"></i> <span>Menu</span>
+            </a>
+        </div>
+        <!-- End content -->
+
     </div>
-    <!-- Shop Filters Modal-->
-    <div class="modal fade" id="modalShopFilters" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Shop Filters</h4>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Widget Categories-->
-                    <section class="widget widget-categories">
-                        <h3 class="widget-title">Shop Categories</h3>
-                        <ul>
-                            <li class="has-children expanded"><a href="#">Shoes</a><span>(1138)</span>
-                                <ul>
-                                    <li><a href="#">Women's</a><span>(508)</span>
-                                        <ul>
-                                            <li><a href="#">Sneakers</a></li>
-                                            <li><a href="#">Heels</a></li>
-                                            <li><a href="#">Loafers</a></li>
-                                            <li><a href="#">Sandals</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Men's</a><span>(423)</span>
-                                        <ul>
-                                            <li><a href="#">Boots</a></li>
-                                            <li><a href="#">Oxfords</a></li>
-                                            <li><a href="#">Loafers</a></li>
-                                            <li><a href="#">Sandals</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Boy's Shoes</a><span>(97)</span></li>
-                                    <li><a href="#">Girl's Shoes</a><span>(110)</span></li>
-                                </ul>
-                            </li>
-                            <li class="has-children"><a href="#">Clothing</a><span>(2356)</span>
-                                <ul>
-                                    <li><a href="#">Women's</a><span>(1032)</span>
-                                        <ul>
-                                            <li><a href="#">Dresses</a></li>
-                                            <li><a href="#">Shirts &amp; Tops</a></li>
-                                            <li><a href="#">Swimwear</a></li>
-                                            <li><a href="#">Shorts</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Men's</a><span>(937)</span>
-                                        <ul>
-                                            <li><a href="#">Shirts &amp; Tops</a></li>
-                                            <li><a href="#">Shorts</a></li>
-                                            <li><a href="#">Swimwear</a></li>
-                                            <li><a href="#">Pants</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Kid's Clothing</a><span>(386)</span></li>
-                                </ul>
-                            </li>
-                            <li class="has-children"><a href="#">Bags</a><span>(420)</span>
-                                <ul>
-                                    <li><a href="#">Handbags</a><span>(180)</span></li>
-                                    <li><a href="#">Backpacks</a><span>(132)</span></li>
-                                    <li><a href="#">Wallets &amp; Accessories</a><span>(47)</span></li>
-                                    <li><a href="#">Luggage</a><span>(61)</span></li>
-                                </ul>
-                            </li>
-                            <li class="has-children"><a href="#">Accessories</a><span>(874)</span>
-                                <ul>
-                                    <li><a href="#">Sunglasses</a><span>(211)</span></li>
-                                    <li><a href="#">Hats</a><span>(195)</span></li>
-                                    <li><a href="#">Watches</a><span>(159)</span></li>
-                                    <li><a href="#">Jewelry</a><span>(203)</span></li>
-                                    <li><a href="#">Belts</a><span>(106)</span></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </section>
-                    <!-- Widget Price Range-->
-                    <section class="widget">
-                        <h3 class="widget-title">Price Range</h3>
-                        <select class="form-control">
-                <option>0 - $100</option>
-                <option>$100 - $200</option>
-                <option>$200 - $500</option>
-                <option>$500 - $1000</option>
-                <option>$1000 - $5000</option>
-              </select>
-                    </section>
-                    <!-- Widget Brand Filter-->
-                    <section class="widget">
-                        <h3 class="widget-title">Filter by Brand</h3>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="adidas">
-                            <label class="custom-control-label" for="adidas">Adidas&nbsp;<span class="text-muted">(254)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="bilabong">
-                            <label class="custom-control-label" for="bilabong">Bilabong&nbsp;<span class="text-muted">(39)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="klein">
-                            <label class="custom-control-label" for="klein">Calvin Klein&nbsp;<span class="text-muted">(128)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="nike">
-                            <label class="custom-control-label" for="nike">Nike&nbsp;<span class="text-muted">(310)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="bahama">
-                            <label class="custom-control-label" for="bahama">Tommy Bahama&nbsp;<span class="text-muted">(42)</span></label>
-                        </div>
-                    </section>
-                    <!-- Widget Size Filter-->
-                    <section class="widget">
-                        <h3 class="widget-title">Filter by Size</h3>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="xl">
-                            <label class="custom-control-label" for="xl">XL&nbsp;<span class="text-muted">(208)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="l">
-                            <label class="custom-control-label" for="l">L&nbsp;<span class="text-muted">(311)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="m">
-                            <label class="custom-control-label" for="m">M&nbsp;<span class="text-muted">(485)</span></label>
-                        </div>
-                        <div class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox" id="s">
-                            <label class="custom-control-label" for="s">S&nbsp;<span class="text-muted">(213)</span></label>
-                        </div>
-                    </section>
-                    <!-- Promo Banner-->
-                    <section class="promo-box" style="background-image: url(img/banners/02.jpg);">
-                        <!-- Choose between .overlay-dark (#000) or .overlay-light (#fff) with default opacity of 50%. You can overrride default color and opacity values via 'style' attribute.--><span class="overlay-dark" style="opacity: .45;"></span>
-                        <div class="promo-box-content text-center padding-top-3x padding-bottom-2x">
-                            <h4 class="text-light text-thin text-shadow">New Collection of</h4>
-                            <h3 class="text-bold text-light text-shadow">Sunglassess</h3><a class="btn btn-sm btn-primary" href="#">Shop Now</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar-->
-    <div class="topbar">
-        <div class="topbar-column"><a class="hidden-md-down" href="mailto:support@tshop.com"><i class="icon-mail"></i>&nbsp; support@tshop.com</a><a class="hidden-md-down" href="tel:00331697720"><i class="icon-bell"></i>&nbsp; 00 33 169 7720</a><a class="social-button sb-facebook shape-none sb-dark"
-                href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#"
-                target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
-        </div>
-        <div class="topbar-column"><a class="hidden-md-down" href="#"><i class="icon-download"></i>&nbsp; Get mobile app</a>
-            <div class="lang-currency-switcher-wrap">
-                <div class="lang-currency-switcher dropdown-toggle"><span class="language"><img alt="English" src="img/flags/GB.png"></span><span class="currency">$ USD</span></div>
-                <div class="dropdown-menu">
-                    <div class="currency-select">
-                        <select class="form-control form-control-rounded form-control-sm">
-                <option value="usd">$ USD</option>
-                <option value="usd">€ EUR</option>
-                <option value="usd">£ UKP</option>
-                <option value="usd">¥ JPY</option>
-              </select>
-                    </div>
-                    <a class="dropdown-item" href="#"><img src="img/flags/FR.png" alt="Français">Français</a>
-                    <a class="dropdown-item" href="#"><img src="img/flags/DE.png" alt="Deutsch">Deutsch</a>
-                    <a class="dropdown-item" href="#"><img src="img/flags/IT.png" alt="Italiano">Italiano</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar-->
-    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <header class="navbar navbar-sticky">
-        <!-- Search-->
-        <form class="site-search" method="get">
-            <input type="text" name="site_search" placeholder="Type to search...">
-            <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
-        </form>
-        <div class="site-branding">
-            <div class="inner">
-                <!-- Off-Canvas Toggle (#shop-categories)-->
-                <a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
-                <!-- Off-Canvas Toggle (#mobile-menu)-->
-                <a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
-                <!-- Site Logo-->
-                <a class="site-logo" href="index.html"><img src="img/logo/logo.png" alt="tshop"></a>
-            </div>
-        </div>
-        <!-- Main Navigation-->
-        <nav class="site-menu">
-            <ul>
-                <li class="has-megamenu"><a href="index.html"><span>Home</span></a></li>
-                <li class="active"><a href="shop-grid-ls.html"><span>Shop</span></a></li>
-                <li class="active"><a href="about.html"><span>About</span></a></li>
-            </ul>
-        </nav>
-        <!-- Toolbar-->
-        <div class="toolbar">
-            <div class="inner">
-                <div class="tools">
-                    <div class="search"><i class="icon-search"></i></div>
-                    <div class="account">
-                        <a href="account-orders.html"></a><i class="icon-head"></i>
-                        <ul class="toolbar-dropdown">
-                            <li class="sub-menu-user">
-                                <div class="user-ava"><img src="img/account/user-ava-sm.jpg" alt="Daniel Adams">
-                                </div>
-                                <div class="user-info">
-                                    <h6 class="user-name">Daniel Adams</h6><span class="text-xs text-muted">290 Reward points</span>
-                                </div>
-                            </li>
-                            <li><a href="account-profile.html">My Profile</a></li>
-                            <li><a href="account-orders.html">Orders List</a></li>
-                            <li><a href="account-wishlist.html">Wishlist</a></li>
-                            <li class="sub-menu-separator"></li>
-                            <li>
-                                <a href="#"> <i class="icon-unlock"></i>Logout</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cart">
-                        <a href="cart.html"></a><i class="icon-bag"></i><span class="count">3</span><span class="subtotal">$289.68</span>
-                        <div class="toolbar-dropdown">
-                            <div class="dropdown-product-item"><span class="dropdown-product-remove"><i class="icon-cross"></i></span>
-                                <a class="dropdown-product-thumb" href="shop-single.html"><img src="img/cart-dropdown/01.jpg" alt="Product"></a>
-                                <div class="dropdown-product-info"><a class="dropdown-product-title" href="shop-single.html">Unionbay Park</a><span class="dropdown-product-details">1 x $43.90</span></div>
-                            </div>
-                            <div class="dropdown-product-item"><span class="dropdown-product-remove"><i class="icon-cross"></i></span>
-                                <a class="dropdown-product-thumb" href="shop-single.html"><img src="img/cart-dropdown/02.jpg" alt="Product"></a>
-                                <div class="dropdown-product-info"><a class="dropdown-product-title" href="shop-single.html">Daily Fabric Cap</a><span class="dropdown-product-details">2 x $24.89</span></div>
-                            </div>
-                            <div class="dropdown-product-item"><span class="dropdown-product-remove"><i class="icon-cross"></i></span>
-                                <a class="dropdown-product-thumb" href="shop-single.html"><img src="img/cart-dropdown/03.jpg" alt="Product"></a>
-                                <div class="dropdown-product-info"><a class="dropdown-product-title" href="shop-single.html">Haan Crossbody</a><span class="dropdown-product-details">1 x $200.00</span></div>
-                            </div>
-                            <div class="toolbar-dropdown-group">
-                                <div class="column"><span class="text-lg">Total:</span></div>
-                                <div class="column text-right"><span class="text-lg text-medium">$289.68&nbsp;</span></div>
-                            </div>
-                            <div class="toolbar-dropdown-group">
-                                <div class="column"><a class="btn btn-sm btn-block btn-secondary" href="cart.html">View Cart</a></div>
-                                <div class="column"><a class="btn btn-sm btn-block btn-success" href="checkout-address.html">Checkout</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- End wrapper -->
     </header>
     <!-- Off-Canvas Wrapper-->
     <div class="offcanvas-wrapper">
@@ -560,7 +326,7 @@
                 </div>
                 <!-- Sidebar          -->
                 <div class="col-xl-3 col-lg-4 order-lg-1">
-                    <button class="sidebar-toggle position-left" data-toggle="modal" data-target="#modalShopFilters"><i class="icon-layout"></i></button>
+                    <button class="sidebar-toggle position-relative" data-toggle="modal" data-target="#modalShopFilters"><i class="icon-layout"></i></button>
                     <aside class="sidebar sidebar-offcanvas">
                         <!-- Widget Categories-->
                         <section class="widget widget-categories">
@@ -714,77 +480,89 @@
                         <!-- Contact Info-->
                         <section class="widget widget-light-skin">
                             <h3 class="widget-title">Get In Touch With Us</h3>
-                            <p class="text-white">Phone: 00 33 169 7720</p>
+                            <p class="text-white">Phone: 506-22-22-22-22</p>
                             <ul class="list-unstyled text-sm text-white">
                                 <li><span class="opacity-50">Monday-Friday:</span>9.00 am - 8.00 pm</li>
                                 <li><span class="opacity-50">Saturday:</span>10.00 am - 6.00 pm</li>
                             </ul>
-                            <p><a class="navi-link-light" href="#">support@tshop.com</a></p><a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin"
+                            <p><a class="navi-link-light" href="#">Info@store.com</a></p><a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin"
                                 href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a>
                             <a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-googleplus"></i></a>
                         </section>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <!-- Mobile App Buttons-->
                         <section class="widget widget-light-skin">
-                            <h3 class="widget-title">Our Mobile App</h3><a class="market-button apple-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a><a class="market-button google-button mb-light-skin"
-                                href="#"><span class="mb-subtitle">Download on the</span><span class="mb-title">Google Play</span></a><a class="market-button windows-button mb-light-skin" href="#"><span class="mb-subtitle">Download on the</span><span class="mb-title">Windows Store</span></a>
+                            <h3 class="widget-title">Contáctanos</h3>
+                            <div class="col-xl-7 white_fonts ">
+                                <div class="user_links col-lg-5 mt-2">
+                                    <hr style="background-color: #3d3d3d; ">
+                                    <div class="row d-flex justify-content-between ">
+                                        <div class="contenedor">
+                                            <div class="redes-sociales2" id="contacto">
+                                                <a href="https://cr.linkedin.com/" target="_blank" class="social linkedin" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                                <a href="https://www.facebook.com/" target="_blank" class="social facebook" title="Facebook"><i
+                                          class="fab fa-facebook"></i></a>
+                                                <a href="https://api.whatsapp.com/send?phone=+50685969024&amp;text=Estoy interesada en tomar tu solicitud de informacion sobre nuestros productos" target="_blank" class="social whatsapp" title="whatsapp">
+                                                    <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                                                <a href="https://www.twitter.com " target="_blank " class="social twitter " title="Twitter "><i
+                                                      class="fab fa-twitter "></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <!-- About Us-->
                         <section class="widget widget-links widget-light-skin">
                             <h3 class="widget-title">About Us</h3>
                             <ul>
                                 <li><a href="#">Careers</a></li>
-                                <li><a href="#">About tshop</a></li>
+                                <li><a href="#">About Unishop</a></li>
                                 <li><a href="#">Our Story</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">Our Blog</a></li>
                             </ul>
                         </section>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <!-- Account / Shipping Info-->
-                        <section class="widget widget-links widget-light-skin">
-                            <h3 class="widget-title">Account &amp; Shipping Info</h3>
-                            <ul>
-                                <li><a href="#">Your Account</a></li>
-                                <li><a href="#">Shipping Rates & Policies</a></li>
-                                <li><a href="#">Refunds & Replacements</a></li>
-                                <li><a href="#">Taxes</a></li>
-                                <li><a href="#">Delivery Info</a></li>
-                                <li><a href="#">Affiliate Program</a></li>
-                            </ul>
-                        </section>
-                    </div>
-                </div>
-                <hr class="hr-light mt-2 margin-bottom-2x">
-                <div class="row">
-                    <div class="col-md-7 padding-bottom-1x">
-                        <!-- Payment Methods-->
-                        <div class="margin-bottom-1x" style="max-width: 615px;"><img src="img/payment_methods.png" alt="Payment Methods">
-                        </div>
-                    </div>
-                    <div class="col-md-5 padding-bottom-1x">
-                        <div class="margin-top-1x hidden-md-up"></div>
-                        <!--Subscription-->
-                        <form class="subscribe-form" action="//rokaux.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=1194bb7544" method="post" target="_blank" novalidate>
-                            <div class="clearfix">
-                                <div class="input-group input-light">
-                                    <input class="form-control" type="email" name="EMAIL" placeholder="Your e-mail"><span class="input-group-addon"><i class="icon-mail"></i></span>
-                                </div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
-                                </div>
-                                <button class="btn btn-primary" type="submit"><i class="icon-check"></i></button>
-                            </div><span class="form-text text-sm text-white opacity-50">Subscribe to our Newsletter to receive early discount offers, latest news, sales and promo information.</span>
-                        </form>
-                    </div>
                 </div>
             </div>
         </footer>
+        <div class="container-fluid">
+            <div class="redes-sociales ">
+                <ul class="list-group text-center text-white ">
+                    <li class="list-group-item ">
+                        <a data-toggle="tooltip " data-placement="left " title=" " href="https://www.facebook.com/" target="_blank " class="text-white " data-original-title="Siguenos a nuestra comunidad de Facebook ">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8/UbU7TrT8/P5dbMBhb8Faab9LXLqIkc03S7MxRrG3vOH19vtebL5YZ746TbTP0+osQrBpdsPAxeWor9uOls91gMft7/iZodWutd0zSLLj5fMqQbFEVrjZ3O+1uuBQYLt5hMihqNiCjM3IzOff4vJpdcLo6vWA6FXYAAAEVklEQVR4nO2dbXeiMBBGa9BqIjREEFBb6253t///H649PV2rBZMQUmbc5353kntMQl4Ic3cHAAAAAAAAAAAAAAAAAIDbJRmP6G5pXq6r1Ww8VtW6zNNoestKGiW1FuOhtVRGVs8xJOtGGD2hgTaiqQf2SzZSje11htLloJ1yl5mxlb5gst/DCRaCSvv8jJbFUIIbI8a2aUWYzUCCj2OrdPI4iGJBrwueMAM01J2m2UTfETp4uEkyioPMCZ2FPjRKym30DVOGCda0/8E3dNjspqE1k2lDNSGC6djVd0GETMOX1HvhG2YZYFjR74bHjlj1F0zl2LV3QvZvpjmHRnpspnlvw5L+SPqG6v9IXDNppevehiwGmqChZsXEcNVXMMkoLytOiFnf2XcyZWI4hSEMqQNDGNKHm2HLiZPtF1wMhd4qs32aHx7uL7D9kIXh0e7hR1PsX+s6vaR+uF4PDobSzH7uO9exKXtDKRf7a3Vkb2gqy848c0MhrVtlvA31fG+tB2tDMd/Z68HacGv/B3kbKqftasaG0m0LibHh9vXGDeXCrR58DZXDOMraUM8c68HWUD3fuqHjOMPXUDy51oOroXxxNrznaaiuvJOW7Pb5iV8Hpoa/usrdLQ4TuVUnLNWgarjtWvfmeutXLlnDjneZkoPvqSVZw45Sc+/XWakayo5S/V+PoGo46Si12foGImoo5h2l+r8Aws1wAcOvoWAIwzjA0CcUDGEYBxj6hCJjKD4tapXpmpe+PKpLuBiKQ7H8TEep+fKSzZyLoesO8CW1LTAZw2nPeuwtVwb4Gy4tHZG/oW1NzN/wh2Vrir1hanuhnr1h/WQNzNxwZ7t9xd7Qel2eveFP2/Yie8MX21Scu2Hyx3aOwd2wtpwe8jd8tZ5jcDe0X9Xlbmg/i+JuaD+poWPYbwVc8TGcPE2nn66J/OkotTm7UDK1XSchZXh24Ud37rUprytBtAzPqnWLu4nn1YKhRygYwjAOMPQJBUMYxgGGPqFgCMM4wNAnFAxhGAcY+oSCIQzjAEOfUDCEYRxg6BMKhjCMAwx9QsEQhnGAoU8oGMIwDjD0CQVDGMYBhj6hYAjDOMDQJxQMYRgHGPqEgiEM40DDMGbOriENe+fsipp3bUDD/nnXoubOG9Kwf+68mPkPBzQMyH8YM4fl0TBpo4dhQA7LuHlIZ1krlo/RtBCQhzRuLtmWxE5uN7ku0QEpj1mk6QzJB/wf5HRO4yeaGYCQvNy3n1v9rqbfEUXHN6Vd2VDviebKp92dSGa0/0Wd9Z51f7DTlEcboS0ZzVwoKA82pggXPHZF74+kfxuPoZ3wQ9GWnGAkxLUEEn4UguJwo+UgTfSd3YzeQ8PMHJMpuZFsNK0BR4ky+DFxQd0IQ6WtajNpAmcyraRFJY2SWncs7L4DraUyuloGTbavSublulpll/l6v41sVa3LPJreP1r3V76H6G4AAAAAAAAAAAAAAAAAABiPv9MVmC+kiydUAAAAAElFTkSuQmCC"
+                                width="35 " alt=" " style="width:30px;height:40px;object-fit:cover;object-position:50% 50%"></a>
+                    </li>
+                    <li class="list-group-item " title="¡Visítanos! ¿Cómo llegar?">
+                        <a data-testid="linkElement " href="https://www.waze.com/es/live-map/directions/microsoft-plaza-roble-guachipelin,-escazu?to=place.w.180748387.1807811554.3573136 " target="_blank " rel="noopener " class="_2edl5 " width="35 " alt=" ">
+                            <wix-image id="img " class=" " data-image-info="{&quot;containerId&quot;:&quot;if35yljk&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:411,&quot;height&quot;:411,&quot;uri&quot;:&quot;74824e_78678cd6025c48c881fae49690d21a71~mv2.png&quot;,&quot;name&quot;:&quot;waze-icon-png.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.66,&quot;amount&quot;:1,&quot;threshold&quot;:0.01}}}} "
+                                data-bg-effect-name=" " data-is-svg="false " data-is-svg-mask="false " data-image-zoomed=" " data-has-ssr-src="true "><img src="https://crocodilemantour.com/wp-content/uploads/2020/09/waze-icon-png.png " alt="ANASAC
+                          WAZE " style="width:60px;height:60px;object-fit:cover;object-position:50% 50% " /></wix-image>
+                        </a>
+                    </li>
+                    <li class="list-group-item ">
+                        <a><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" width="35 " alt=" " style="width:30px;height:40px;object-fit:cover;object-position:50% 50%"></a>
+                    </li>
+                    <li class="list-group-item ">
+                        <a><img src="data:image/png;base64,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"
+                                width="35 " alt=" " style="width:30px;height:40px;object-fit:cover;object-position:50% 50%"></a>
+                    </li>
+                    <li class="list-group-item" title=" ¡Comunícate con nosotros! ">
+                        <a data-testid="linkElement " href="https://wa.me/50685969024 " target="_blank " rel="noopener " class="_2edl5 ">
+                            <wix-image id="img_comp-kaers49j " class="rca7A _2ztx1 " data-image-info="{&quot;containerId&quot;:&quot;comp-kaers49j&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:3840,&quot;height&quot;:2160,&quot;uri&quot;:&quot;74824e_4225d13142aa42b79474b077c1259a9e~mv2.png&quot;,&quot;name&quot;:&quot;WhatsApp-logo.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;quality&quot;:{&quot;unsharpMask&quot;:{&quot;radius&quot;:0.66,&quot;amount&quot;:1,&quot;threshold&quot;:0.01}}}} "
+                                data-bg-effect-name=" " data-is-svg="false " data-is-svg-mask="false " data-image-zoomed=" " data-has-ssr-src="true "><img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png " alt="Safety-solution-cr CONTACTO WHATSAPP
+                  " style="width:30px;height:40px;object-fit:cover;object-position:50% 50% " /></wix-image>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </div>
     <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
     <!-- Backdrop-->
@@ -794,6 +572,16 @@
     <script src="js/scripts.min.js"></script>
     <!-- Customizer scripts-->
     <script src="customizer/customizer.min.js"></script>
+    <!-- Javascript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
