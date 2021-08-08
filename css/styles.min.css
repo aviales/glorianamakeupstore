@@ -853,8 +853,7 @@ figure figcaption {
 }
 
 .bg-primary {
-    background-color: #FF66CC;
-    !important
+    background-color: #FF66CC !important
 }
 
 .bg-success {
@@ -3252,8 +3251,7 @@ button:focus {
 
 .nav-pills .nav-item.show .nav-link,
 .nav-pills .nav-link.active {
-    background-color: #FF66CC;
-    !important;
+    background-color: #FF66CC !important;
     color: #fff;
     cursor: default
 }
